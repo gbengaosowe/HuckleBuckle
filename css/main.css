@@ -1,10 +1,51 @@
-head{
-position: center
-font-size: 1.2em;
+body{
+	color: green;
+}
+
+h1 {
+	text-align: center;
+	color: black;
+	margin-top: 0;
+	background-color: blue;
+}
+
+.main {
 background-color: lightblue;
+height: 515px;
+width: 100%;
+}
+
+h2 {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+#gameOn {
+	background-color: pink;
+	text-align: center;
+}
+
+#play {
+	background-color: red;
+}
+
+.hide {
+	display: none;
 }
 
 
-body{
-color: green;
+#response {
+
+}
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	color: black;
+	height: 60px;
+	width: 100%;
 }

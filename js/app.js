@@ -1,38 +1,41 @@
-$(document).ready(function() {
-    
-	$("#play").click(function() {
-	
-	    event.preventDefault();
-		var userInput = $("#YourPick").val();
-		console.log(userInput);
-	});
-
-});
+$(document).ready(function(){
+	//Global variables
 var maxGuess = 100;
+var randNum = rand(maxGuess);
+var prevDiff = maxGuess + 1;
+var userInput;
+var diff;
+
+$("#responses").hide()
+
 
 function rand(n){
 	return Math.round(Math.random()*n+1);
-	
-var randNum = rand(maxGuess);
-
-var prevDiff = maxGuess + 1;
 }
 
-
-while(true){
-	var userInput = parseInt(prompt("enter your guess"));
-	var diff = Math.abs(randNum - userInput);
-	
-	if (userInput === randNum){
-		alert("GENIUS!"); 
-		break;
+function checkVal(){
+	if (userInput == randNum){
+		//alert("GENIUS!"); 
+		$("#responses").html("GENIUS!!! PLAY AGAIN!").show("slow");
 	}
+	
 	else if (diff < prevDiff) {
-		alert("hot");
+		//alert("hot");
 		prevDiff = diff;
+		$("#responses").html("HOT! TRY AGAIN").show("slow");
 	}
 	else if (diff > prevDiff) {
-		alert("cold");
+		//alert("cold");
 		prevDiff = diff;
+		$("#responses").html("COLD! TRY AGAIN").show("slow");
 	}
 }
+
+$("#play").click(function(){
+	userInput = $("#YourPick").val();
+	diff = Math.abs(userInput - randNum);
+	checkVal();
+
+});
+
+});

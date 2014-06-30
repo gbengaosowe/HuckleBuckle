@@ -1,34 +1,26 @@
 <! DOCTYPE html>
 <html>
 	<head>
-		<title>Hot or Cold</title>
+		<title>HuckleBuckle Game</title>
 		<link rel="stylesheet" href="css/main.css">
 		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/app.js">
-		</script>
+		<script type="text/javascript" src="js/app.js"></script>
 	</head>
 	<body>
 		<header>
-				<h1>Hot or Cold</h1>			
+				<h1>The HuckleBuckle Game</h1>			
 		</header>
 		<div class="main">
 			<h2>How to Play</h2>
 			<p>There's a hidden number between 0 and 100. Guess the number. The hint - Hot (Close) or Cold (Far) will guide you to the right choice</p></br>
-			<div id="gameOn" value="">
-				<label for="guess">Guess the Number:</label>
-				<input name="userInput" "type="text" id="YourPick"><br>
-				<button id="play">GO</button>
+			<div id="gameOn">
+				<label for="">Guess the Number</label>
+				<input "type="text" id="YourPick"><br>
+				<input type="submit" id="play" value="GO">
 			</div>
-			<div id="Hot" class="hide">
-			<p>Hot</p>
+			<div id="responses">
 			</div>
-			<div id="Cold" class= "hide">
-			<p>Cold</p>
-			</div>
-			<div id="Correct" class= "hide">
-			<p>Genius</p>
-			</div>
-		</div>		
+		</div>			
 	</body>
 	<footer>
 		<p>Copyright GbengaOsowe, 2014</p>

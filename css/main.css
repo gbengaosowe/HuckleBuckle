@@ -1,0 +1,55 @@
+body{
+	color: black;
+	background-color: #b3dced;
+	background: url("../img/numbers.png");
+}
+
+h1 {
+	text-align: center;
+	color: blue;
+	margin-top: 0;
+}
+
+.main {
+height: 515px;
+width: 100%;
+}
+
+h2 {
+ text-align: center;
+}
+
+#responses {
+ margin: 0 auto;
+ background-color: #e0f3fa;
+ color: black;
+ height: 20px;
+ width: 155px;
+}
+
+p {
+	text-align: center;
+}
+
+#gameOn {
+	text-align: center;
+}
+
+
+
+#play {
+	background-color: red;
+}
+
+#response {
+
+}
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	color: black;
+	height: 60px;
+	width: 100%;
+}

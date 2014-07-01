@@ -17,6 +17,7 @@ function checkVal(){
 	if (userInput == randNum){
 		//alert("GENIUS!"); 
 		$("#responses").html("GENIUS!!! PLAY AGAIN!").show("slow");
+		prompt()
 	}
 	
 	else if (diff < prevDiff) {
@@ -31,7 +32,8 @@ function checkVal(){
 	}
 }
 
-$("#play").click(function(){
+$("#gameOn").submit(function(event){
+	event.preventDefault();
 	userInput = $("#YourPick").val();
 	diff = Math.abs(userInput - randNum);
 	checkVal();

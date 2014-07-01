@@ -1,7 +1,10 @@
 body{
-	color: black;
+	font-family: 'Aclonica', sans-serif;
+	color: tomato;
+	font-size: 0.9em;
+	font-weight: bold;
 	background-color: #b3dced;
-	background: url("../img/numbers.png");
+	background: url("../img/numbers.png") no-repeat; 
 }
 
 h1 {
@@ -21,12 +24,33 @@ h2 {
 
 #responses {
  margin: 0 auto;
- background-color: #e0f3fa;
- color: black;
+ border: 3px solid #0000CD;
+ background-color: #ADFF2F;
+ background: transparent;
+ color: white;
  height: 20px;
- width: 155px;
+ width: 200px;
+ font-family: 'Montserrat', sans-serif;
+} 
+
+ 
+ .GENIUS {
+background: url("../img/genius.gif") no-repeat;
+color: gold;
+display: none;
 }
 
+.hot {
+background: url("../img/hot.gif") no-repeat;
+color: red;
+}
+
+.cold {
+background: url("../img/freezing.gif") no-repeat;
+color: blue;
+}
+ 
+ 
 p {
 	text-align: center;
 }
@@ -35,14 +59,24 @@ p {
 	text-align: center;
 }
 
+#YourPick{
+    border: 3px solid #3366ff; 
+    box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    padding: 7px;
+    background: #def;
+	background: transparent;
+    margin: 0 0 10px 0;
+	color: blue;
+	font-size: 1.2em;
+	font-weight: bold;
+}
 
 
 #play {
-	background-color: red;
-}
-
-#response {
-
+	background-color: rgb(0,255,0);
+	color: blue;
 }
 
 footer {
@@ -52,4 +86,5 @@ footer {
 	color: black;
 	height: 60px;
 	width: 100%;
+	font-family: 'Montserrat', sans-serif;
 }
